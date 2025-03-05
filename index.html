@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="portofolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Header</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Biodata</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                    <li class="nav-item">
+                        <button id="toggle-mode" class="btn btn-secondary">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Tambahkan kelas animasi pada elemen-elemen yang diinginkan -->
+    <div class="container mt-4 animated-fadeIn">
+        <div class="row align-items-center hero" id="hero">
+            <div class="col-md-6 text-center text-md-start">
+                <h2 class="text-primary fw-bold custom-heading animated-bounceIn">Halo, Saya Adi – Web Developer</h2>
+                <p class="animated-fadeIn">Selamat datang di portofolio saya! Saya adalah seorang Web Developer dengan keahlian dalam HTML, CSS, JavaScript, dan berbagai teknologi lainnya. Dengan pengalaman dalam membangun website responsif, optimasi SEO, serta integrasi sistem, saya siap membantu menciptakan solusi digital yang inovatif dan fungsional.</p>
+                <a href="#" class="btn-learn-more animated-slideIn" data-bs-toggle="modal" data-bs-target="#learnMoreModal">
+                    Pelajari lebih lanjut
+                </a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/img1.jpg" alt="Profile Picture" class="img-fluid rounded-circle border border-primary animated-slideIn">
+                <div class="mt-3 social-icons animated-fadeIn">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5 about-me animated-fadeIn" id="about">
+            <h3 class="text-primary fw-bold animated-bounceIn">PROFILE</h3>
+            <p class="animated-fadeIn">Ubur ubru ikan lele, Kenalan yuk lee..</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 p-2">
+                        <button class="btn btn-light w-100 animated-slideIn">
+                            <i class="fas fa-user"></i> Full Name: Adi Dharma Putra
+                        </button>
+                    </div>
+                    <div class="col-sm-6 col-md-4 p-2">
+                        <button class="btn btn-light w-100 animated-slideIn">
+                            <i class="fas fa-graduation-cap"></i> Education: S1 Sistem Informasi
+                        </button>
+                    </div>
+                    <div class="col-sm-6 col-md-4 p-2">
+                        <button class="btn btn-light w-100 animated-slideIn">
+                            <i class="fas fa-briefcase"></i> Pekerjaan: WEB DEVELOPER
+                        </button>
+                    </div>
+                    <div class="col-sm-6 col-md-4 p-2">
+                        <button class="btn btn-light w-100 animated-slideIn">
+                            <i class="fas fa-envelope"></i> Contact: adidarmap@gmail.com
+                        </button>
+                    </div>
+                    <div class="col-sm-6 col-md-4 p-2">
+                        <button class="btn btn-light w-100 animated-slideIn">
+                            <i class="fas fa-gamepad"></i> Hobi: Games, Belajar
+                        </button>
+                    </div>
+                    <div class="col-sm-6 col-md-4 p-2">
+                        <button class="btn btn-light w-100 animated-slideIn">
+                            <i class="fas fa-map-marker-alt"></i> Alamat: Sidoarjo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5 portfolio" id="portfolio">
+            <h3 class="text-primary fw-bold" data-aos="fade-up">Portofolio</h3>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 p-2" data-aos="zoom-in">
+                    <a href="https://adidarma24.github.io/animation-svg-css/" target="_blank">
+                        <img src="img/img2.png" alt="Proyek 1" class="img-fluid rounded">
+                    </a>
+                    <h5 class="mt-2" data-aos="fade-up">Proyek 1</h5>
+                    <p data-aos="fade-up">Opening</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-2" data-aos="zoom-in">
+                    <a href="https://adidarma24.github.io/Naga-Muter" target="_blank">
+                        <img src="img/img3.png" alt="Proyek 2" class="img-fluid rounded">
+                    </a>
+                    <h5 class="mt-2" data-aos="fade-up">Proyek 2</h5>
+                    <p data-aos="fade-up">Naga Muter</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-2" data-aos="zoom-in">
+                    <a href="https://adidarma24.github.io/Paralax-Scrol" target="_blank">
+                        <img src="img/img4.png" alt="Proyek 3" class="img-fluid rounded">
+                    </a>
+                    <h5 class="mt-2" data-aos="fade-up">Proyek 3</h5>
+                    <p data-aos="fade-up">Paralax scroll</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-2" data-aos="zoom-in">
+                    <a href="https://adidarma24.github.io/3D-Muter-Kaleng/" target="_blank">
+                        <img src="img/img5.png" alt="Proyek 4" class="img-fluid rounded">
+                    </a>
+                    <h5 class="mt-2" data-aos="fade-up">Proyek 4</h5>
+                    <p data-aos="fade-up">Kaleng Muter</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-2" data-aos="zoom-in">
+                    <a href="https://adidarma24.github.io/Kebun-Binatang/" target="_blank">
+                        <img src="img/img6.png" alt="Proyek 5" class="img-fluid rounded">
+                    </a>
+                    <h5 class="mt-2" data-aos="fade-up">Proyek 5</h5>
+                    <p data-aos="fade-up">Kebun Binatang</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-2" data-aos="zoom-in">
+                    <a href="https://adidarma24.github.io/Menu-Starback/" target="_blank">
+                        <img src="img/img7.png" alt="Proyek 6" class="img-fluid rounded">
+                    </a>
+                    <h5 class="mt-2" data-aos="fade-up">Proyek 6</h5>
+                    <p data-aos="fade-up">Menu Starback KW</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-primary text-center py-3 mt-5">
+        <p class="mb-0">© 2025 Adi Dharma. All rights reserved</p>
+    </footer>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content dark-mode">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="learnMoreModalLabel">Tentang Saya</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lulusan S1 Sistem Informasi dengan latar belakang yang kuat dalam pengembangan web dan teknologi informasi. Berpengalaman dalam mengajar konsep dasar pemrograman web dan membimbing proyek mahasiswa hingga menguasai pengembangan aplikasi berbasis web yang responsif. Memiliki kemampuan adaptasi yang baik, keterampilan teknis yang kuat dalam pengembangan front-end dan back-end, serta pengalaman praktis dalam manajemen IT dan pengelolaan acara tingkat nasional. Berkomitmen untuk terus belajar dan memberikan solusi inovatif dalam dunia pengembangan web.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
